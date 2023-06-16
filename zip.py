@@ -1,7 +1,8 @@
 import os
 import zipfile
+import modify
 
-version = '1.0'
+version = '1.1'
 
 def zipdir(path, ziph):
     for root, dirs, files in os.walk(path):
