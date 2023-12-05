@@ -1,8 +1,8 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "2": "tfc_ie_addon:item/ore/normal_aluminum",
-    "particle": "tfc_ie_addon:item/ore/normal_aluminum"
+    "2": "tfc_ie_addon:item/ore/normal_bauxite",
+    "particle": "tfc_ie_addon:item/ore/normal_bauxite"
   },
   "elements": [
     {

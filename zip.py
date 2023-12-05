@@ -2,7 +2,7 @@ import os
 import zipfile
 import modify
 
-version = '1.1'
+version = '2.0'
 
 def zipdir(path, ziph):
     for root, dirs, files in os.walk(path):
