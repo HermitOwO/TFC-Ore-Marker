@@ -1,5 +1,6 @@
 import os
 import json
+from pathlib import Path
 
 path = './original_files'
 
@@ -68,4 +69,6 @@ for root, dirs, files in os.walk(path, topdown=False):
             			"down": {"uv": [6, 0, 8, 2], "texture": "#alert", "cullface": "up"}
             		}
                 })
-            json.dump(data, open(os.path.join('./modified_files', os.path.relpath(os.path.join(root, file), path)), 'w'), indent = 2)
+            new_path = Path(os.path.join('./modified_files', os.path.relpath(os.path.join(root, file), path)))
+            new_path.parent.mkdir(parents=True, exist_ok=True)
+            json.dump(data, open(new_path, 'w'), indent = 2)
